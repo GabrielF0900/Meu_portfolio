@@ -1,0 +1,249 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*font-family:'Courier New', Courier, monospace;*/
+    font-family: Verdana,Tahoma, sans-serif;
+}
+body{
+    width: 100%;
+    min-width: 920px;
+    margin: 0 auto;
+}
+.cabecalho-site{
+    display: flex;
+    background-color: #272729;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-cabecalho{
+    width: 100px;
+    height: auto;
+}
+/*navegação */
+.navigation ul{
+    display: flex;
+    list-style: none;
+}
+.navigation li a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 10px;
+    font-size: 19px;
+}
+
+/*Container principal onde está o titulo h1 e a imagem iustração*/
+.container-principal{
+    display: flex;
+    width: 920px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.container-principal img{
+    max-width: 400px;
+    min-width: 100px;
+}
+.container-texto{
+    width: 500px;
+    height: 200px;
+}
+.container-texto h1{
+    font-size: 4em;
+}
+.container-texto h2{
+    color: #4c4c50;
+}
+
+
+/*Estilos da seção sobre*/
+.about{
+    display: flex;
+    background-color: #14142D;
+    min-width: 920px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.container-sobre{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.container-sobre h2{
+    color: aliceblue;
+    font-size: 1.9em;
+}
+.container-sobre p {
+    color: #95959b;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/*formatação do container dos cards*/
+.container-principal-card{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.services{
+    max-width: 920px;
+    height: auto;
+    margin: 0 auto;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: #14142D;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 50px;
+    box-sizing: border-box;
+    border: 5px solid;
+    border-left-color:#703E78;
+    border-bottom-color:#703E78;
+    border-right-color:#BA68C8;
+    border-top-color: #BA68C8;
+    
+}
+.card h3{
+    color: aliceblue;
+}
+.card p{
+    color: #c7c7cc;
+}
+
+/*client design */
+.section-clients{
+    background-color: #14142D;
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+.container-client-principal{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 920px;
+    margin: 0 auto ;
+}
+.card-client{
+    margin-top: 50px;
+    width: 420px;
+    height: 200px;
+    border-radius: 8px;
+    text-align: center;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 60px;
+}
+.card-client h3{
+    color: aliceblue;
+    font-size: 1.7em;
+}
+.card-client p{
+    color: #c7c7cc;
+}
+
+/*Estilo de contato*/
+.container-formulario-contato{
+    display: flex;
+    width: 920px;
+    height: auto;
+    margin: 0 auto;
+}
+.container-form{
+    margin-top: 50px;
+}
+.contato-form{
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+}
+.container-form h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.container-form p {
+    font-size: 1.2em;
+    color: #4c4c50;
+    margin-bottom: 50px;
+}
+.contato-form label{
+    color: #4c4c50;
+    font-size: larger;
+    padding: 10px 0px;
+}
+.contato-form input{
+    height: 30px;
+    border-radius: 5px;
+    border: 5px solid;
+    border-left-color:#703E78;
+    border-bottom-color:#703E78;
+    border-right-color:#BA68C8;
+    border-top-color: #BA68C8;
+    font-size: 1.5em;
+    padding: 20px;
+}
+.contato-form textarea{
+    width: 100%;
+    border-radius: 5px;
+    border: 5px solid;
+    border-left-color:#703E78;
+    border-bottom-color:#703E78;
+    border-right-color:#BA68C8;
+    border-top-color: #BA68C8;
+    margin-bottom: 90px;
+    resize: none;
+}
+.contato-form .btn_enviar{
+    background-color: #703E78;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: larger;
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+/*Editando o rodapé*/
+footer{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+    background-color: #14142D;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+footer p{
+    color: aliceblue;
+}
+footer .logo-footer{
+    display: flex;
+    justify-content: center;
+}
+footer .logo-footer img{
+    width: 60%;
+}
+footer .logo-footer-redes-sociais ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+footer .logo-footer-redes-sociais img{
+    width: 40px;
+    
+}
